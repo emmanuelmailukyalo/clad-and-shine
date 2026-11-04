@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clad and Shine - Modern Streetwear</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter & Playfair Display for "The 90's" -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="base-styling">
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #111827;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-serif-vintage {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+</head>
+<body class="bg-white">
+<!-- BEGIN: NavigationBar -->
+<header class="w-full border-b border-gray-100 bg-white sticky top-0 z-50" data-purpose="main-navigation">
+<div class="max-w-[1440px] mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a aria-label="Clad and Shine Home" class="flex items-center space-x-3" href="heelave-storefront-2560.html">
+<!-- SVG Clad and Shine geometric logo icon -->
+<svg class="w-8 h-8 text-black fill-current" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M38 10C38 4.47715 42.4772 0 48 0H52C57.5228 0 62 4.47715 62 10V26H78C83.5228 26 88 30.4772 88 36V40C88 45.5228 83.5228 50 78 50C83.5228 50 88 54.4772 88 60V64C88 69.5228 83.5228 74 78 74H62V90C62 95.5228 57.5228 100 52 100H48C42.4772 100 38 95.5228 38 90V74H22C16.4772 74 12 69.5228 12 64V60C12 54.4772 16.4772 50 22 50C16.4772 50 12 45.5228 12 40V36C12 30.4772 16.4772 26 22 26H38V10Z"></path>
+</svg>
+<span class="text-2xl font-black tracking-tight text-black">Clad and Shine</span>
+</a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center space-x-7 text-sm font-semibold tracking-normal text-black">
+<a class="hover:text-gray-500 transition-colors" href="heelave-storefront-2560.html#new-arrivals">New Arrivals</a>
+<a class="hover:text-gray-500 transition-colors" href="clothing.html">Clothing</a>
+<a class="hover:text-gray-500 transition-colors" href="shoes.html">Shoes</a>
+<a class="hover:text-gray-500 transition-colors" href="bags.html">Bags</a>
+<a class="hover:text-gray-500 transition-colors" href="accessories.html">Accessories</a>
+<a class="text-rose-700 hover:text-rose-900 transition-colors" href="heelave-storefront-2560.html#sale">Sale</a>
+</nav>
+<!-- Search and Quick Actions -->
+<div class="flex items-center space-x-5">
+<!-- Search Input Bar -->
+<div class="relative w-48 sm:w-56 hidden sm:block">
+<input class="w-full pl-9 pr-4 py-1.5 text-xs bg-gray-100 hover:bg-gray-200/80 focus:bg-white border-none rounded-full focus:ring-1 focus:ring-black transition placeholder-gray-400" placeholder="Search" type="text"/>
+<svg class="w-4 h-4 text-gray-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<!-- Wishlist Icon -->
+<button aria-label="Favorites" class="text-black hover:text-gray-600 transition p-1" type="button">
+<svg class="w-5 h-5 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+<!-- Shopping Cart Icon -->
+<button aria-label="Shopping Cart" class="text-black hover:text-gray-600 transition p-1" type="button">
+<svg class="w-5 h-5 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<button id="mobile-menu-toggle" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-black hover:text-gray-600 transition p-1" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</button>
+</div>
+</div>
+<nav id="mobile-menu" aria-label="Mobile navigation" class="hidden md:hidden absolute left-0 right-0 top-full border-t border-gray-100 bg-white shadow-lg">
+<div class="max-w-[1440px] mx-auto px-6 sm:px-12 py-3 flex flex-col text-sm font-semibold text-black">
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="heelave-storefront-2560.html#new-arrivals">New Arrivals</a>
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="clothing.html">Clothing</a>
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="shoes.html">Shoes</a>
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="bags.html">Bags</a>
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="accessories.html">Accessories</a>
+<a class="py-3 text-rose-700 hover:text-rose-900 transition-colors" href="heelave-storefront-2560.html#sale">Sale</a>
+</div>
+</nav>
+</header>
+<!-- END: NavigationBar -->
+<!-- BEGIN: AnnouncementBar -->
+<div class="w-full bg-[#111111] py-2 px-4 text-center" data-purpose="promo-banner">
+<p class="text-[12px] text-white tracking-wide font-normal">
+      Explore the sale edit  
+      <a class="underline font-medium hover:text-gray-300 transition" href="#">Get Now</a>
+</p>
+</div>
+<!-- END: AnnouncementBar -->
+<main class="max-w-[1440px] mx-auto px-6 sm:px-12 py-8">
+<!-- BEGIN: HeroBannerSection -->
+<section class="relative w-full rounded-3xl overflow-hidden min-h-[480px] lg:min-h-[580px] bg-neutral-900 flex flex-col justify-between p-8 sm:p-14 shadow-sm mb-16" data-purpose="hero-banner">
+<!-- Background Hero Image with subtle dark gradient -->
+<div class="absolute inset-0 z-0">
+<img alt="Woman in contemporary streetwear on a city street" class="w-full h-full object-cover object-center" src="assets/clad-and-shine-hero.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/40"></div>
+</div>
+<!-- Hero Bottom Content -->
+<div class="relative z-10 mt-auto flex flex-col md:flex-row md:items-end justify-between gap-6 pt-24">
+<div class="max-w-2xl text-white">
+<h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none mb-3">
+            Your style, your kind of shine.
+          </h1>
+<p class="text-sm sm:text-base text-gray-200 font-normal">
+            Easy-to-wear pieces, chosen to help you feel like yourself.
+          </p>
+</div>
+<a class="inline-flex items-center justify-center bg-white text-black font-semibold text-xs tracking-wider uppercase px-8 py-3.5 rounded-full hover:bg-gray-100 transition shadow-md w-fit" href="clothing.html">
+          SHOP NOW
+        </a>
+</div>
+</section>
+<!-- END: HeroBannerSection -->
+<!-- BEGIN: NewArrivalsSection -->
+<section id="new-arrivals" class="mb-20 scroll-mt-24" data-purpose="new-arrivals">
+<!-- Section Header -->
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl sm:text-3xl font-extrabold text-[#111111] tracking-tight">New Arrivals</h2>
+<!-- Slider Controls -->
+<div class="flex items-center space-x-2">
+<button aria-label="Previous" class="w-10 h-10 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-gray-100 transition">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</button>
+<button aria-label="Next" class="w-10 h-10 rounded-full border border-gray-200 bg-gray-50 flex items-center justify-center text-gray-600 hover:bg-gray-100 transition">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Products Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product Card 1 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4] flex items-center justify-center">
+<img alt="Clad and Shine Relaxed Hoodie" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/clothing-01.jpg"/>
+<!-- Favorite Heart -->
+<button aria-label="Save" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition">
+<svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+<div class="mt-3 flex justify-between items-start text-sm">
+<div>
+<h3 class="font-bold text-gray-900 text-sm">Clad and Shine Relaxed Hoodie</h3>
+<p class="text-xs text-gray-500 font-normal mt-0.5">5 Colors</p>
+</div>
+<span class="font-bold text-gray-900 text-sm">$199</span>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4] flex items-center justify-center">
+<img alt="Clad and Shine Everyday Sweatshirt" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/clothing-02.jpg"/>
+<button aria-label="Save" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition">
+<svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+<div class="mt-3 flex justify-between items-start text-sm">
+<div>
+<h3 class="font-bold text-gray-900 text-sm">Clad and Shine Everyday Sweatshirt</h3>
+<p class="text-xs text-gray-500 font-normal mt-0.5">3 Colors</p>
+</div>
+<span class="font-bold text-gray-900 text-sm">$99</span>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4] flex items-center justify-center">
+<img alt="Clad and Shine Cropped Half Zip" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/clothing-03.jpg"/>
+<button aria-label="Save" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition">
+<svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+<div class="mt-3 flex justify-between items-start text-sm">
+<div>
+<h3 class="font-bold text-gray-900 text-sm">Clad and Shine Cropped Half Zip</h3>
+<p class="text-xs text-gray-500 font-normal mt-0.5">2 Colors</p>
+</div>
+<span class="font-bold text-gray-900 text-sm">$399</span>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4] flex items-center justify-center">
+<img alt="Clad and Shine Women's Half Zip" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/clothing-04.jpg"/>
+<button aria-label="Save" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition">
+<svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+<div class="mt-3 flex justify-between items-start text-sm">
+<div>
+<h3 class="font-bold text-gray-900 text-sm">Clad and Shine Women's Half Zip</h3>
+<p class="text-xs text-gray-500 font-normal mt-0.5">4 Colors</p>
+</div>
+<span class="font-bold text-gray-900 text-sm">$399</span>
+</div>
+</div>
+
+<!-- Product Card 5 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4] flex items-center justify-center">
+<img alt="Clad and Shine Linen Button-Down" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/clothing-05.jpg" loading="lazy"/>
+<button aria-label="Save" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start text-sm"><div><h3 class="font-bold text-gray-900 text-sm">Clad and Shine Linen Button-Down</h3><p class="text-xs text-gray-500 font-normal mt-0.5">New season</p></div></div>
+</div>
+<!-- Product Card 6 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4] flex items-center justify-center">
+<img alt="Clad and Shine Ribbed Knit Top" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/clothing-06.jpg" loading="lazy"/>
+<button aria-label="Save" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start text-sm"><div><h3 class="font-bold text-gray-900 text-sm">Clad and Shine Ribbed Knit Top</h3><p class="text-xs text-gray-500 font-normal mt-0.5">New season</p></div></div>
+</div>
+<!-- Product Card 7 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4] flex items-center justify-center">
+<img alt="Clad and Shine Wide-Leg Trousers" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/clothing-07.jpg" loading="lazy"/>
+<button aria-label="Save" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start text-sm"><div><h3 class="font-bold text-gray-900 text-sm">Clad and Shine Wide-Leg Trousers</h3><p class="text-xs text-gray-500 font-normal mt-0.5">New season</p></div></div>
+</div>
+<!-- Product Card 8 -->
+<div class="flex flex-col group cursor-pointer">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4] flex items-center justify-center">
+<img alt="Clad and Shine Denim Jacket" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/clothing-08.jpg" loading="lazy"/>
+<button aria-label="Save" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start text-sm"><div><h3 class="font-bold text-gray-900 text-sm">Clad and Shine Denim Jacket</h3><p class="text-xs text-gray-500 font-normal mt-0.5">New season</p></div></div>
+</div>
+</div>
+</section>
+<!-- END: NewArrivalsSection -->
+<!-- BEGIN: MiddlePromoCard -->
+<section id="sale" class="mb-20 scroll-mt-24" data-purpose="sale">
+<div class="w-full rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2 bg-[#121212] min-h-[300px]">
+<!-- Left Side: Lifestyle Image -->
+<div class="relative h-64 md:h-auto overflow-hidden">
+<img alt="Clad and Shine women's collection" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGXB88PN-fJ9k4ra5S2zKhyssTWkWIjJCQmu6NJVs5HBbeaKMcVFU1xeGh-MVnjRaXDdJcRwH4kRNX3Ten-jSuuPWw_I8pRXvpBfV8EobUVXIns0A6beS5vVLBalSZIDN4sABcJhkfkhl76-wCZFEK4_hOiq1vNhPGKcLV1bOgD7kf1W0EmznlgTrT_9rvLU6Su1WfZhRm7G02_jzVJgU2AYLEOKH7sQngDa2RPIirgM7t2W_CqLclWw"/>
+</div>
+<!-- Right Side: Dark Graphic Offer Box -->
+<div class="relative bg-[#121212] p-8 sm:p-12 flex flex-col justify-between overflow-hidden">
+<!-- Red Circle Decorative Graphic (Top Right) -->
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-[#ff1717] rounded-full pointer-events-none"></div>
+<!-- Promo Content -->
+<div class="relative z-10 max-w-md">
+<span class="text-xs text-gray-300 font-medium tracking-wide uppercase">The Sale Edit</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-2 leading-tight">
+              Discover the Sale Edit.<br/>Find your new favourite piece.
+            </h2>
+</div>
+<!-- Bottom Action and Logo -->
+<div class="relative z-10 flex items-end justify-between mt-8">
+<a class="bg-white text-black text-xs font-bold uppercase tracking-wider py-3 px-7 rounded-full hover:bg-gray-200 transition" href="clothing.html">
+              SHOP THE SALE
+            </a>
+<!-- Clad and Shine Subtle Logo Accent in Corner -->
+<svg class="w-7 h-7 text-white fill-current opacity-90" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M38 10C38 4.47715 42.4772 0 48 0H52C57.5228 0 62 4.47715 62 10V26H78C83.5228 26 88 30.4772 88 36V40C88 45.5228 83.5228 50 78 50C83.5228 50 88 54.4772 88 60V64C88 69.5228 83.5228 74 78 74H62V90C62 95.5228 57.5228 100 52 100H48C42.4772 100 38 95.5228 38 90V74H22C16.4772 74 12 69.5228 12 64V60C12 54.4772 16.4772 50 22 50C16.4772 50 12 45.5228 12 40V36C12 30.4772 16.4772 26 22 26H38V10Z"></path>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<!-- END: MiddlePromoCard -->
+<!-- BEGIN: TheEssentialSection -->
+<section class="mb-24" data-purpose="the-essential">
+<h2 class="text-2xl sm:text-3xl font-extrabold text-[#111111] tracking-tight mb-8">The Clad and Shine Edit</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Shop Men -->
+<div class="relative bg-[#dcdddf] rounded-3xl overflow-hidden aspect-[4/6] flex flex-col items-center justify-end p-8 group">
+<img alt="Clad and Shine women's clothing" class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0F-teqNbjbmEBuweCC4DnlcldgS_QfhrOVsJWWXEm_-j_BVX7cUQNXnSXBQ3m-mAeaG4gS08m96ZI9PCHTs18k_BX_WAfzx_aNZD4HZg1ZFnDUxHAtFtDtcEZJkFPY2g_vcy6qbWHNu2wc5zS4qPKgZ1_mqdUfNK1bZLW1UsXDUvbxgcQHDdwyf4G_tfF2Mng3K1tjAcgM8jrliFE5pYIfSZse5pOiUzyzQuTyzblPil-MbNn6UnQ_w"/>
+<div class="relative z-10 w-full flex justify-center">
+<a class="w-full max-w-[200px] text-center bg-[#171717]/95 hover:bg-black text-white text-xs font-bold tracking-wider uppercase py-3.5 px-6 rounded-full shadow-lg transition backdrop-blur-sm" href="clothing.html">
+              SHOP CLOTHING
+            </a>
+</div>
+</div>
+<!-- Card 2: Shop Kid -->
+<div class="relative bg-[#dcdddf] rounded-3xl overflow-hidden aspect-[4/6] flex flex-col items-center justify-end p-8 group">
+<img alt="Clad and Shine shoes" class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=85"/>
+<div class="relative z-10 w-full flex justify-center">
+<a class="w-full max-w-[200px] text-center bg-[#171717]/95 hover:bg-black text-white text-xs font-bold tracking-wider uppercase py-3.5 px-6 rounded-full shadow-lg transition backdrop-blur-sm" href="shoes.html">
+              SHOP SHOES
+            </a>
+</div>
+</div>
+<!-- Card 3: Shop Women -->
+<div class="relative bg-[#dcdddf] rounded-3xl overflow-hidden aspect-[4/6] flex flex-col items-center justify-end p-8 group">
+<img alt="Clad and Shine accessories" class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85"/>
+<div class="relative z-10 w-full flex justify-center">
+<a class="w-full max-w-[200px] text-center bg-[#171717]/95 hover:bg-black text-white text-xs font-bold tracking-wider uppercase py-3.5 px-6 rounded-full shadow-lg transition backdrop-blur-sm" href="accessories.html">
+              SHOP ACCESSORIES
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TheEssentialSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="border-t border-gray-100 bg-white pt-14 pb-8" data-purpose="footer">
+<div class="max-w-[1440px] mx-auto px-6 sm:px-12">
+<!-- Top Section: Brand + Links Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-gray-100">
+<!-- Column 1: Newsletter & Brand Info (Spans 4 cols) -->
+<div class="md:col-span-4">
+<div class="flex items-center space-x-3 mb-4">
+<svg class="w-8 h-8 text-black fill-current" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M38 10C38 4.47715 42.4772 0 48 0H52C57.5228 0 62 4.47715 62 10V26H78C83.5228 26 88 30.4772 88 36V40C88 45.5228 83.5228 50 78 50C83.5228 50 88 54.4772 88 60V64C88 69.5228 83.5228 74 78 74H62V90C62 95.5228 57.5228 100 52 100H48C42.4772 100 38 95.5228 38 90V74H22C16.4772 74 12 69.5228 12 64V60C12 54.4772 16.4772 50 22 50C16.4772 50 12 45.5228 12 40V36C12 30.4772 16.4772 26 22 26H38V10Z"></path>
+</svg>
+<span class="text-2xl font-black tracking-tight text-black">Clad and Shine</span>
+</div>
+<p class="text-xs text-gray-500 mb-4 max-w-sm">
+            Get newsletter update<br/>
+            Never miss our upcoming product and discount
+          </p>
+<!-- Newsletter Form -->
+<form class="flex items-center space-x-2 max-w-sm" onsubmit="event.preventDefault()">
+<input class="w-full px-4 py-2 text-xs border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-black placeholder-gray-400" placeholder="Your Email" required="" type="email"/>
+<button class="bg-black hover:bg-gray-800 text-white text-xs font-semibold px-5 py-2.5 rounded-full transition whitespace-nowrap" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+<!-- Column 2: About Links (Spans 2 cols) -->
+<div class="md:col-span-2">
+<h4 class="text-sm font-bold text-gray-900 mb-4">About</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-normal">
+<li><a class="hover:text-black transition" href="#">Company</a></li>
+<li><a class="hover:text-black transition" href="#">News</a></li>
+<li><a class="hover:text-black transition" href="#">Investors</a></li>
+<li><a class="hover:text-black transition" href="#">Sustainability</a></li>
+</ul>
+</div>
+<!-- Column 3: Support Links (Spans 2 cols) -->
+<div class="md:col-span-2">
+<h4 class="text-sm font-bold text-gray-900 mb-4">Support</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-normal">
+<li><a class="hover:text-black transition" href="#">Contact Us</a></li>
+<li><a class="hover:text-black transition" href="#">Delivery</a></li>
+<li><a class="hover:text-black transition" href="#">Returns</a></li>
+<li><a class="hover:text-black transition" href="#">Order Status</a></li>
+<li><a class="hover:text-black transition" href="#">Payment</a></li>
+</ul>
+</div>
+<!-- Column 4: Collection Links & Socials (Spans 2 cols) -->
+<div class="md:col-span-2 flex justify-between items-start">
+<div>
+<h4 class="text-sm font-bold text-gray-900 mb-4">Collection</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-normal">
+<li><a class="hover:text-black transition" href="clothing.html">Clothing</a></li>
+<li><a class="hover:text-black transition" href="accessories.html">Accessories</a></li>
+<li><a class="hover:text-black transition" href="shoes.html">Shoes</a></li>
+<li><a class="hover:text-black transition" href="bags.html">Bags</a></li>
+<li><a class="hover:text-black transition" href="heelave-storefront-2560.html#sale">Sale</a></li>
+</ul>
+</div>
+<!-- Social Icons Stacked -->
+<div class="flex flex-col space-y-2.5">
+<!-- Twitter/X -->
+<a aria-label="Twitter" class="w-7 h-7 rounded-full bg-[#1e1e1e] text-white flex items-center justify-center hover:bg-black transition" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<!-- Facebook -->
+<a aria-label="Facebook" class="w-7 h-7 rounded-full bg-[#1e1e1e] text-white flex items-center justify-center hover:bg-black transition" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<!-- Instagram -->
+<a aria-label="Instagram" class="w-7 h-7 rounded-full bg-[#1e1e1e] text-white flex items-center justify-center hover:bg-black transition" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<!-- YouTube -->
+<a aria-label="YouTube" class="w-7 h-7 rounded-full bg-[#1e1e1e] text-white flex items-center justify-center hover:bg-black transition" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Column 5: Location -->
+<div id="location" class="md:col-span-2">
+<h4 class="text-sm font-bold text-gray-900 mb-4">Location</h4>
+<p class="space-y-2.5 text-xs text-gray-600 font-normal">Nairobi, Kenya<br/>Inako</p>
+</div>
+</div>
+<!-- Bottom Bar: Copyright & Legal Policies -->
+<div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-[11px] text-gray-500">
+<p>© 2026 Clad and Shine. All Rights Reserved</p>
+<div class="flex items-center space-x-4 mt-3 sm:mt-0">
+<a class="hover:text-black transition" href="#">Guides</a>
+<a class="hover:text-black transition" href="#">Terms of Use</a>
+<a class="hover:text-black transition" href="#">Terms of Sale</a>
+<a class="hover:text-black transition" href="#">Clad and Shine Privacy Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<script>
+(() => {
+  const button = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (!button || !menu) return;
+  const closeMenu = () => {
+    menu.classList.add('hidden');
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-label', 'Open navigation menu');
+  };
+  button.addEventListener('click', () => {
+    const isOpen = button.getAttribute('aria-expanded') === 'true';
+    menu.classList.toggle('hidden', isOpen);
+    button.setAttribute('aria-expanded', String(!isOpen));
+    button.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+  });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) closeMenu();
+  });
+})();
+</script>
+<script src="store.js" defer></script>
+</body></html>

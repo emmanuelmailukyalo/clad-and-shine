@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Bags | Clad and Shine</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/>
+<style>body{font-family:'Inter',sans-serif;color:#111827;background:#fff;-webkit-font-smoothing:antialiased}.font-serif-vintage{font-family:'Playfair Display',serif}html{scroll-behavior:smooth}</style></head><body class="bg-white">
+<!-- BEGIN: NavigationBar -->
+<header class="w-full border-b border-gray-100 bg-white sticky top-0 z-50" data-purpose="main-navigation">
+<div class="max-w-[1440px] mx-auto px-6 sm:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a aria-label="Clad and Shine Home" class="flex items-center space-x-3" href="heelave-storefront-2560.html">
+<!-- SVG Clad and Shine geometric logo icon -->
+<svg class="w-8 h-8 text-black fill-current" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M38 10C38 4.47715 42.4772 0 48 0H52C57.5228 0 62 4.47715 62 10V26H78C83.5228 26 88 30.4772 88 36V40C88 45.5228 83.5228 50 78 50C83.5228 50 88 54.4772 88 60V64C88 69.5228 83.5228 74 78 74H62V90C62 95.5228 57.5228 100 52 100H48C42.4772 100 38 95.5228 38 90V74H22C16.4772 74 12 69.5228 12 64V60C12 54.4772 16.4772 50 22 50C16.4772 50 12 45.5228 12 40V36C12 30.4772 16.4772 26 22 26H38V10Z"></path>
+</svg>
+<span class="text-2xl font-black tracking-tight text-black">Clad and Shine</span>
+</a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center space-x-7 text-sm font-semibold tracking-normal text-black">
+<a class="hover:text-gray-500 transition-colors" href="heelave-storefront-2560.html#new-arrivals">New Arrivals</a>
+<a class="hover:text-gray-500 transition-colors" href="clothing.html">Clothing</a>
+<a class="hover:text-gray-500 transition-colors" href="shoes.html">Shoes</a>
+<a class="hover:text-gray-500 transition-colors" href="bags.html">Bags</a>
+<a class="hover:text-gray-500 transition-colors" href="accessories.html">Accessories</a>
+<a class="text-rose-700 hover:text-rose-900 transition-colors" href="heelave-storefront-2560.html#sale">Sale</a>
+</nav>
+<!-- Search and Quick Actions -->
+<div class="flex items-center space-x-5">
+<!-- Search Input Bar -->
+<div class="relative w-48 sm:w-56 hidden sm:block">
+<input class="w-full pl-9 pr-4 py-1.5 text-xs bg-gray-100 hover:bg-gray-200/80 focus:bg-white border-none rounded-full focus:ring-1 focus:ring-black transition placeholder-gray-400" placeholder="Search" type="text"/>
+<svg class="w-4 h-4 text-gray-500 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<!-- Wishlist Icon -->
+<button aria-label="Favorites" class="text-black hover:text-gray-600 transition p-1" type="button">
+<svg class="w-5 h-5 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+<!-- Shopping Cart Icon -->
+<button aria-label="Shopping Cart" class="text-black hover:text-gray-600 transition p-1" type="button">
+<svg class="w-5 h-5 stroke-[1.8]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<button id="mobile-menu-toggle" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-black hover:text-gray-600 transition p-1" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</button>
+</div>
+</div>
+<nav id="mobile-menu" aria-label="Mobile navigation" class="hidden md:hidden absolute left-0 right-0 top-full border-t border-gray-100 bg-white shadow-lg">
+<div class="max-w-[1440px] mx-auto px-6 sm:px-12 py-3 flex flex-col text-sm font-semibold text-black">
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="heelave-storefront-2560.html#new-arrivals">New Arrivals</a>
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="clothing.html">Clothing</a>
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="shoes.html">Shoes</a>
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="bags.html">Bags</a>
+<a class="py-3 border-b border-gray-100 hover:text-gray-500 transition-colors" href="accessories.html">Accessories</a>
+<a class="py-3 text-rose-700 hover:text-rose-900 transition-colors" href="heelave-storefront-2560.html#sale">Sale</a>
+</div>
+</nav>
+</header>
+<!-- END: NavigationBar -->
+<div class="w-full bg-[#111111] py-2 px-4 text-center"><p class="text-[12px] text-white tracking-wide">Explore the sale edit <a class="underline font-medium hover:text-gray-300 transition" href="heelave-storefront-2560.html#sale">Shop the sale</a></p></div>
+<main class="max-w-[1440px] mx-auto px-6 sm:px-12 py-10 sm:py-14">
+<section class="mb-10 sm:mb-14">
+<a class="text-xs font-semibold uppercase tracking-[0.16em] text-gray-500 hover:text-black" href="heelave-storefront-2560.html">Home</a>
+<p class="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Clad and Shine · Nairobi</p>
+<div class="mt-3 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div><h1 class="text-4xl sm:text-5xl font-black tracking-tight text-[#111111]">Bags</h1><p class="mt-3 max-w-xl text-sm sm:text-base leading-relaxed text-gray-600">Carry your essentials with effortless everyday style.</p></div>
+<p class="text-xs text-gray-500">16 pieces</p>
+</div>
+</section>
+<div class="mb-6 flex items-center justify-between border-b border-gray-200 pb-4"><p class="text-xs font-semibold uppercase tracking-wider text-gray-500">The collection</p><button class="text-xs font-semibold text-gray-700" type="button">Sort by: Featured <span aria-hidden="true">⌄</span></button></div>
+<section aria-label="Bags collection" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10"><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Everyday Shoulder Bag" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-01.jpg" loading="lazy"/>
+<button aria-label="Save Everyday Shoulder Bag" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Everyday Shoulder Bag</h2><p class="text-xs text-gray-500 font-normal mt-1">A versatile shape with room for the essentials.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Mini Crossbody" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-02.jpg" loading="lazy"/>
+<button aria-label="Save Mini Crossbody" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Mini Crossbody</h2><p class="text-xs text-gray-500 font-normal mt-1">Hands-free styling for busy days and nights out.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Structured Tote" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-03.jpg" loading="lazy"/>
+<button aria-label="Save Structured Tote" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Structured Tote</h2><p class="text-xs text-gray-500 font-normal mt-1">A polished carryall for work, errands and more.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Weekend Bag" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-04.jpg" loading="lazy"/>
+<button aria-label="Save Weekend Bag" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Weekend Bag</h2><p class="text-xs text-gray-500 font-normal mt-1">A roomy companion for a little time away.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Soft Bucket Bag" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-05.jpg" loading="lazy"/>
+<button aria-label="Save Soft Bucket Bag" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Soft Bucket Bag</h2><p class="text-xs text-gray-500 font-normal mt-1">A relaxed shape with everyday appeal.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Day Tote" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-06.jpg" loading="lazy"/>
+<button aria-label="Save Day Tote" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Day Tote</h2><p class="text-xs text-gray-500 font-normal mt-1">Your go-to carryall for busy days.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Textured Crossbody" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-07.jpg" loading="lazy"/>
+<button aria-label="Save Textured Crossbody" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Textured Crossbody</h2><p class="text-xs text-gray-500 font-normal mt-1">A compact piece with a tactile finish.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Evening Clutch" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-08.jpg" loading="lazy"/>
+<button aria-label="Save Evening Clutch" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Evening Clutch</h2><p class="text-xs text-gray-500 font-normal mt-1">A sleek finishing touch for nights out.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Woven Shopper" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-09.jpg" loading="lazy"/>
+<button aria-label="Save Woven Shopper" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Woven Shopper</h2><p class="text-xs text-gray-500 font-normal mt-1">A light, easy carryall for sunny days.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Sculpted Shoulder Bag" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-10.jpg" loading="lazy"/>
+<button aria-label="Save Sculpted Shoulder Bag" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Sculpted Shoulder Bag</h2><p class="text-xs text-gray-500 font-normal mt-1">A modern silhouette with a soft finish.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Carry-All Tote" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-11.jpg" loading="lazy"/>
+<button aria-label="Save Carry-All Tote" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Carry-All Tote</h2><p class="text-xs text-gray-500 font-normal mt-1">Room for everything your day brings.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Mini Bag with Strap" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-12.jpg" loading="lazy"/>
+<button aria-label="Save Mini Bag with Strap" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Mini Bag with Strap</h2><p class="text-xs text-gray-500 font-normal mt-1">A small essential with hands-free ease.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Soft Hobo Bag" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-13.jpg" loading="lazy"/>
+<button aria-label="Save Soft Hobo Bag" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Soft Hobo Bag</h2><p class="text-xs text-gray-500 font-normal mt-1">A relaxed shape for everyday styling.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="City Satchel" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-14.jpg" loading="lazy"/>
+<button aria-label="Save City Satchel" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">City Satchel</h2><p class="text-xs text-gray-500 font-normal mt-1">A structured companion for days on the go.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Mini Top-Handle Bag" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-15.jpg" loading="lazy"/>
+<button aria-label="Save Mini Top-Handle Bag" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Mini Top-Handle Bag</h2><p class="text-xs text-gray-500 font-normal mt-1">A polished little piece for day or evening.</p></div></div>
+</article><article class="flex flex-col group">
+<div class="relative bg-[#ebece8] rounded-2xl overflow-hidden aspect-[3/4]">
+<img alt="Leather-Effect Shoulder Bag" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" src="assets/products/bags-16.jpg" loading="lazy"/>
+<button aria-label="Save Leather-Effect Shoulder Bag" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-black hover:bg-white transition" type="button"><svg class="w-4 h-4 stroke-[1.8]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="mt-3 flex justify-between items-start gap-3 text-sm"><div><h2 class="font-bold text-gray-900 text-sm">Leather-Effect Shoulder Bag</h2><p class="text-xs text-gray-500 font-normal mt-1">A versatile classic with a refined finish.</p></div></div>
+</article></section>
+<div class="mt-16 rounded-2xl bg-[#f6f5f2] px-6 py-10 sm:px-12 sm:py-14 text-center"><p class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">Made for your everyday</p><h2 class="mt-3 text-2xl sm:text-3xl font-extrabold tracking-tight text-[#111111]">Find your next favourite</h2><a class="mt-6 inline-flex rounded-full bg-black px-7 py-3.5 text-xs font-bold uppercase tracking-wider text-white hover:bg-gray-800 transition" href="heelave-storefront-2560.html#new-arrivals">Explore new arrivals</a></div>
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="border-t border-gray-100 bg-white pt-14 pb-8" data-purpose="footer">
+<div class="max-w-[1440px] mx-auto px-6 sm:px-12">
+<!-- Top Section: Brand + Links Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-gray-100">
+<!-- Column 1: Newsletter & Brand Info (Spans 4 cols) -->
+<div class="md:col-span-4">
+<div class="flex items-center space-x-3 mb-4">
+<svg class="w-8 h-8 text-black fill-current" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<path d="M38 10C38 4.47715 42.4772 0 48 0H52C57.5228 0 62 4.47715 62 10V26H78C83.5228 26 88 30.4772 88 36V40C88 45.5228 83.5228 50 78 50C83.5228 50 88 54.4772 88 60V64C88 69.5228 83.5228 74 78 74H62V90C62 95.5228 57.5228 100 52 100H48C42.4772 100 38 95.5228 38 90V74H22C16.4772 74 12 69.5228 12 64V60C12 54.4772 16.4772 50 22 50C16.4772 50 12 45.5228 12 40V36C12 30.4772 16.4772 26 22 26H38V10Z"></path>
+</svg>
+<span class="text-2xl font-black tracking-tight text-black">Clad and Shine</span>
+</div>
+<p class="text-xs text-gray-500 mb-4 max-w-sm">
+            Get newsletter update<br/>
+            Never miss our upcoming product and discount
+          </p>
+<!-- Newsletter Form -->
+<form class="flex items-center space-x-2 max-w-sm" onsubmit="event.preventDefault()">
+<input class="w-full px-4 py-2 text-xs border border-gray-300 rounded-full focus:outline-none focus:ring-1 focus:ring-black placeholder-gray-400" placeholder="Your Email" required="" type="email"/>
+<button class="bg-black hover:bg-gray-800 text-white text-xs font-semibold px-5 py-2.5 rounded-full transition whitespace-nowrap" type="submit">
+              Subscribe
+            </button>
+</form>
+</div>
+<!-- Column 2: About Links (Spans 2 cols) -->
+<div class="md:col-span-2">
+<h4 class="text-sm font-bold text-gray-900 mb-4">About</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-normal">
+<li><a class="hover:text-black transition" href="#">Company</a></li>
+<li><a class="hover:text-black transition" href="#">News</a></li>
+<li><a class="hover:text-black transition" href="#">Investors</a></li>
+<li><a class="hover:text-black transition" href="#">Sustainability</a></li>
+</ul>
+</div>
+<!-- Column 3: Support Links (Spans 2 cols) -->
+<div class="md:col-span-2">
+<h4 class="text-sm font-bold text-gray-900 mb-4">Support</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-normal">
+<li><a class="hover:text-black transition" href="#">Contact Us</a></li>
+<li><a class="hover:text-black transition" href="#">Delivery</a></li>
+<li><a class="hover:text-black transition" href="#">Returns</a></li>
+<li><a class="hover:text-black transition" href="#">Order Status</a></li>
+<li><a class="hover:text-black transition" href="#">Payment</a></li>
+</ul>
+</div>
+<!-- Column 4: Collection Links & Socials (Spans 2 cols) -->
+<div class="md:col-span-2 flex justify-between items-start">
+<div>
+<h4 class="text-sm font-bold text-gray-900 mb-4">Collection</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-normal">
+<li><a class="hover:text-black transition" href="clothing.html">Clothing</a></li>
+<li><a class="hover:text-black transition" href="accessories.html">Accessories</a></li>
+<li><a class="hover:text-black transition" href="shoes.html">Shoes</a></li>
+<li><a class="hover:text-black transition" href="bags.html">Bags</a></li>
+<li><a class="hover:text-black transition" href="heelave-storefront-2560.html#sale">Sale</a></li>
+</ul>
+</div>
+<!-- Social Icons Stacked -->
+<div class="flex flex-col space-y-2.5">
+<!-- Twitter/X -->
+<a aria-label="Twitter" class="w-7 h-7 rounded-full bg-[#1e1e1e] text-white flex items-center justify-center hover:bg-black transition" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+</a>
+<!-- Facebook -->
+<a aria-label="Facebook" class="w-7 h-7 rounded-full bg-[#1e1e1e] text-white flex items-center justify-center hover:bg-black transition" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<!-- Instagram -->
+<a aria-label="Instagram" class="w-7 h-7 rounded-full bg-[#1e1e1e] text-white flex items-center justify-center hover:bg-black transition" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<!-- YouTube -->
+<a aria-label="YouTube" class="w-7 h-7 rounded-full bg-[#1e1e1e] text-white flex items-center justify-center hover:bg-black transition" href="#">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Column 5: Location -->
+<div id="location" class="md:col-span-2">
+<h4 class="text-sm font-bold text-gray-900 mb-4">Location</h4>
+<p class="space-y-2.5 text-xs text-gray-600 font-normal">Nairobi, Kenya<br/>Inako</p>
+</div>
+</div>
+<!-- Bottom Bar: Copyright & Legal Policies -->
+<div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-[11px] text-gray-500">
+<p>© 2026 Clad and Shine. All Rights Reserved</p>
+<div class="flex items-center space-x-4 mt-3 sm:mt-0">
+<a class="hover:text-black transition" href="#">Guides</a>
+<a class="hover:text-black transition" href="#">Terms of Use</a>
+<a class="hover:text-black transition" href="#">Terms of Sale</a>
+<a class="hover:text-black transition" href="#">Clad and Shine Privacy Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<script>
+(() => {
+  const button = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (!button || !menu) return;
+  const closeMenu = () => {
+    menu.classList.add('hidden');
+    button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-label', 'Open navigation menu');
+  };
+  button.addEventListener('click', () => {
+    const isOpen = button.getAttribute('aria-expanded') === 'true';
+    menu.classList.toggle('hidden', isOpen);
+    button.setAttribute('aria-expanded', String(!isOpen));
+    button.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+  });
+  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) closeMenu();
+  });
+})();
+</script>
+<script src="store.js" defer></script>
+</body></html>

@@ -1,0 +1,33 @@
+CLAD AND SHINE — PRODUCTION READINESS CHECKLIST
+
+The local cart and ordering flow is a working prototype. Complete these items before accepting real orders.
+
+[ ] Replace sample catalog data
+Confirm product names, images, prices, size options, SKUs, stock counts, fit and care notes, and delivery fees.
+
+[ ] Move the database to production hosting
+Migrate the local SQLite products, variants, inventory, and order records to a managed database such as Supabase Postgres. Configure access policies, backups, and recovery before launch. Review: https://supabase.com/docs/guides/deployment/going-into-prod
+
+[ ] Deploy the storefront and server
+Use your domain, HTTPS, and a hosted server. Keep database and payment secrets on the server, never in browser code.
+
+[ ] Secure admin access
+Replace the temporary password with individual staff accounts and proper authentication, permissions, and account recovery.
+
+[ ] Connect payments
+Complete merchant setup and sandbox testing for Global Payments and M-Pesa. The current checkout records orders locally but does not take payment. References: https://developer.globalpayments.com/ and https://developer.safaricom.co.ke/apis
+
+[ ] Make order status follow confirmed payment
+Handle provider callbacks, duplicate notifications, failed or abandoned payments, cancellations, refunds, and stock release or reservation.
+
+[ ] Set up customer communications and fulfilment
+Prepare order confirmations, payment results, delivery updates, returns, and a staff process for picking, packing, and shipping orders.
+
+[ ] Prepare privacy and business policies
+Publish delivery, returns, privacy, and terms information. Review Kenya data-protection obligations for customer details and check whether ODPC registration applies to the business. References: https://www.odpc.go.ke/faqs/ and https://new.kenyalaw.org/akn/ke/act/2019/24/eng%402019-11-15/source
+
+[ ] Rehearse before launch
+Test payment success and failure, out-of-stock races, order cancellation, refunds, admin access, backups, and database restoration.
+
+CURRENT STATUS
+The site is a local prototype until hosting, real business data, and payment processing are set up.
